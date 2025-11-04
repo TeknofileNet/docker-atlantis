@@ -13,7 +13,7 @@ name: release-please
 
 jobs:
   release-please:
-    runs-on: ping-internal-x86
+    runs-on: arc-runner-set
     steps:
       - uses: actions/create-github-app-token@v2
         id: app-token

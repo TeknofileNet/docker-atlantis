@@ -12,7 +12,7 @@ on:
 
 jobs:
   pre-commit:
-    runs-on: ping-internal-x86-dind
+    runs-on: arc-runner-set
     name: Run pre-commit checks
 
     steps:
