@@ -1,0 +1,9 @@
+{
+  "bootstrap-sha": "",
+  "release-type": "simple",
+  "packages": {
+    ".": {
+      "extra-files": ["VERSION"]
+    }
+  }
+}

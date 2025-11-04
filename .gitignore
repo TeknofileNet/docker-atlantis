@@ -1,0 +1,13 @@
+Jenkinsfile
+*.swp
+
+# Common ignore patterns for opseng-op-atlantis
+*.log
+*.tmp
+*.bak
+__pycache__/
+node_modules/
+.dockerignore
+config.yaml
+root/config/keys/
+root/config/etc/

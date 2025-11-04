@@ -1,0 +1,13 @@
+{
+  "name": "opseng-op-atlantis",
+  "version": "1.0.0",
+  "description": "Ping Identity Atlantis Docker Container",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0"
+  },
+  "scripts": {
+    "commitlint": "commitlint --edit"
+  }
+}

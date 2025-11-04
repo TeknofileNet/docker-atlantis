@@ -1,0 +1,6 @@
+# ShellCheck configuration
+# Disable specific checks globally
+
+# SC2086: Double quote to prevent globbing and word splitting
+# SC1091: Not following sourced files
+disable=SC2086,SC1091

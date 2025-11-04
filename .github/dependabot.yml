@@ -1,0 +1,34 @@
+version: 2
+updates:
+  # Dockerfile updates
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore:"
+      include: "scope"
+    open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "debian"
+        update-types: ["version-update:semver-major"]
+
+  # GitHub Actions updates
+  - package-ecosystem: "github-actions"
+    directory: "/.github/workflows"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore:"
+      include: "scope"
+    open-pull-requests-limit: 5
+
+  # YAML config updates (for tools like Atlantis, Terragrunt, Terraform)
+  - package-ecosystem: "terraform"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore:"
+      include: "scope"
+    open-pull-requests-limit: 5

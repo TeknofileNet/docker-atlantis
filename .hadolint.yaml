@@ -1,0 +1,21 @@
+# Hadolint configuration for Dockerfile linting
+# https://github.com/hadolint/hadolint
+
+# Ignore specific rules
+ignored:
+  - DL3008  # Pin versions in apt-get install (we handle this with --no-install-recommends)
+  - DL3009  # Delete apt-get lists after installing (we do this already)
+  - DL3026  # Use only an allowed registry (we use internal Ping registries)
+  - DL3049  # Label is missing (we use OCI labels instead)
+
+# Trusted registries
+trustedRegistries:
+  - docker.io
+  - ghcr.io
+  - art01.corp.pingidentity.com
+  - docker.corp.pingidentity.com
+
+# Label schema
+label-schema:
+  author: text
+  version: semver
