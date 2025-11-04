@@ -12,7 +12,7 @@ on:
 
 jobs:
   pre-commit:
-    runs-on: arc-runner-set
+    runs-on: tkfnet-latest
     name: Run pre-commit checks
 
     steps:
