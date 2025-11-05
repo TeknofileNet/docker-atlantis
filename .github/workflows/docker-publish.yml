@@ -46,19 +46,28 @@ jobs:
       - name: Read versions from config.yaml
         id: versions
         run: |
+          set -e
+          ATLANTIS_VERSION=$(grep -A1 '^atlantis:' config.yaml | grep 'version:' | awk '{print $2}')
+          TG_ATLANTIS_CONFIG_VER=$(grep -A1 '^tg_atlantis_config:' config.yaml | grep 'version:' | awk '{print $2}')
+          TF_VERSION=$(grep -A1 '^terraform:' config.yaml | grep 'version:' | awk '{print $2}')
+          TG_VERSION=$(grep -A1 '^terragrunt:' config.yaml | grep 'version:' | awk '{print $2}')
+          KUBECTL_VERSION=$(grep -A1 '^kubectl:' config.yaml | grep 'version:' | awk '{print $2}')
+          HELM_VERSION=$(grep -A1 '^helm:' config.yaml | grep 'version:' | awk '{print $2}')
+
+          for var in ATLANTIS_VERSION TG_ATLANTIS_CONFIG_VER TF_VERSION TG_VERSION KUBECTL_VERSION HELM_VERSION; do
+            if [ -z "${!var}" ]; then
+              echo "::error::Failed to read $var from config.yaml. Aborting build." >&2
+              exit 1
+            fi
+          done
+
           {
-            echo "ATLANTIS_VERSION=$(grep -A1 '^atlantis:' config.yaml | \
-              grep 'version:' | awk '{print $2}')"
-            echo "TG_ATLANTIS_CONFIG_VER=$(grep -A1 '^tg_atlantis_config:' \
-              config.yaml | grep 'version:' | awk '{print $2}')"
-            echo "TF_VERSION=$(grep -A1 '^terraform:' config.yaml | \
-              grep 'version:' | awk '{print $2}')"
-            echo "TG_VERSION=$(grep -A1 '^terragrunt:' config.yaml | \
-              grep 'version:' | awk '{print $2}')"
-            echo "KUBECTL_VERSION=$(grep -A1 '^kubectl:' config.yaml | \
-              grep 'version:' | awk '{print $2}')"
-            echo "HELM_VERSION=$(grep -A1 '^helm:' config.yaml | \
-              grep 'version:' | awk '{print $2}')"
+            echo "ATLANTIS_VERSION=$ATLANTIS_VERSION"
+            echo "TG_ATLANTIS_CONFIG_VER=$TG_ATLANTIS_CONFIG_VER"
+            echo "TF_VERSION=$TF_VERSION"
+            echo "TG_VERSION=$TG_VERSION"
+            echo "KUBECTL_VERSION=$KUBECTL_VERSION"
+            echo "HELM_VERSION=$HELM_VERSION"
           } >> "$GITHUB_OUTPUT"
 
       - name: Set up QEMU
