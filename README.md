@@ -1,5 +1,5 @@
 
-# opseng-op-atlantis
+# docker-atlantis
 
 ## Overview
 
@@ -85,7 +85,7 @@ docker build \
   --build-arg TG_ATLANTIS_CONFIG_VER=1.18.0 \
   --build-arg TG_VERSION=0.64.4 \
   --build-arg TF_VERSION=1.9.3 \
-  -t opseng-op-atlantis .
+  -t docker-atlantis .
 ```
 
 ## Running

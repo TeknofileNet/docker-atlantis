@@ -55,7 +55,7 @@ docker build \
   --build-arg TG_ATLANTIS_CONFIG_VER=1.18.0 \
   --build-arg TF_VERSION=1.9.3 \
   --build-arg TG_VERSION=0.64.4 \
-  -t opseng-op-atlantis .
+  -t docker-atlantis .
 ```
 
 ## Benefits

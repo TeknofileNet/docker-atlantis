@@ -70,11 +70,11 @@ ARG KUBECTL_VERSION
 ARG HELM_VERSION
 
 # Metadata labels following OCI standards
-LABEL org.opencontainers.image.title="opseng-op-atlantis"
+LABEL org.opencontainers.image.title="docker-atlantis"
 LABEL org.opencontainers.image.description="Custom Atlantis image with Terragrunt support"
-LABEL org.opencontainers.image.authors="Operational Platforms <sreop@pingidentity.com>"
-LABEL org.opencontainers.image.vendor="Ping Identity"
-LABEL org.opencontainers.image.source="https://github.com/ping-internal/opseng-op-atlantis"
+LABEL org.opencontainers.image.authors="James Richardson <james@jrichardson.com>"
+LABEL org.opencontainers.image.vendor="TeknofileNet"
+LABEL org.opencontainers.image.source="https://github.com/ping-internal/docker-atlantis"
 
 # Copy binaries and tools from build stage
 COPY --from=debian-base /usr/local/bin/terragrunt-atlantis-config /usr/local/bin/
