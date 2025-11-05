@@ -4,8 +4,7 @@
 ARG ATLANTIS_VERSION=0.28.5
 
 # Build stage for dependencies
-FROM art01.corp.pingidentity.com:5400/debian:bookworm-slim AS debian-base
-
+FROM debian:bookworm-slim AS debian-base
 # Define build arguments with defaults from config.yaml
 ARG TARGETPLATFORM
 ARG ATLANTIS_VERSION
