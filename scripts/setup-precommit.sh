@@ -2,7 +2,7 @@
 
 set -e
 
-echo "🚀 Setting up pre-commit hooks for opseng-op-atlantis..."
+echo "🚀 Setting up pre-commit hooks for docker-atlantis..."
 echo ""
 
 # Check if running on macOS or Linux

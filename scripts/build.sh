@@ -33,7 +33,7 @@ echo "  Helm: $HELM_VERSION"
 echo ""
 
 # Build the Docker image
-IMAGE_NAME="${IMAGE_NAME:-opseng-op-atlantis}"
+IMAGE_NAME="${IMAGE_NAME:-docker-atlantis}"
 IMAGE_TAG="${IMAGE_TAG:-latest}"
 
 echo "🔨 Building Docker image: $IMAGE_NAME:$IMAGE_TAG"

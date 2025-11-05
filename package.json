@@ -1,5 +1,5 @@
 {
-  "name": "opseng-op-atlantis",
+  "name": "docker-atlantis",
   "version": "1.0.0",
   "description": "Ping Identity Atlantis Docker Container",
   "private": true,
