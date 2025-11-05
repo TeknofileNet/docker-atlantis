@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/TeknofileNet/docker-atlantis/compare/v1.0.1...v1.0.2) (2025-11-05)
+
+
+### Bug Fixes
+
+* **build:** config.yaml wasn't included for version support ([011693c](https://github.com/TeknofileNet/docker-atlantis/commit/011693cb28ea06f28d061b8f4c1c4522611105ca))
+* **build:** config.yaml wasn't included for version support ([d8c4983](https://github.com/TeknofileNet/docker-atlantis/commit/d8c4983a96beab487fb488f35ce8cee7e3228daf))
+
 ## [1.0.1](https://github.com/TeknofileNet/docker-atlantis/compare/v1.0.0...v1.0.1) (2025-11-05)
 
 
