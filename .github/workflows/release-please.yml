@@ -13,7 +13,7 @@ name: release-please
 
 jobs:
   release-please:
-    runs-on: arc-runner-set
+    runs-on: tkfnet-latest
     steps:
       - uses: actions/create-github-app-token@v2
         id: app-token
