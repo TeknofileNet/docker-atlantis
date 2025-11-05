@@ -6,7 +6,7 @@ updates:
     schedule:
       interval: "weekly"
     commit-message:
-      prefix: "chore:"
+      prefix: "chore"
       include: "scope"
     open-pull-requests-limit: 5
     ignore:
@@ -19,7 +19,7 @@ updates:
     schedule:
       interval: "weekly"
     commit-message:
-      prefix: "chore:"
+      prefix: "chore"
       include: "scope"
     open-pull-requests-limit: 5
 
@@ -29,6 +29,6 @@ updates:
     schedule:
       interval: "weekly"
     commit-message:
-      prefix: "chore:"
+      prefix: "chore"
       include: "scope"
     open-pull-requests-limit: 5

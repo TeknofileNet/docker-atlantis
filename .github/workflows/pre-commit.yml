@@ -12,7 +12,7 @@ on:
 
 jobs:
   pre-commit:
-    runs-on: tkfnet-latest
+    runs-on: ubuntu-latest
     name: Run pre-commit checks
 
     steps:
@@ -29,6 +29,9 @@ jobs:
 
       - name: Install pre-commit
         run: pip install pre-commit
+
+      - name: Update pre-commit hooks
+        run: pre-commit autoupdate --repo https://github.com/pre-commit/pre-commit-hooks
 
       - name: Cache pre-commit environments
         uses: actions/cache@v4
