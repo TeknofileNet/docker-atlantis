@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.0.0 (2025-11-05)
+
+
+### Features
+
+* **initial:** initial commit ([aef062d](https://github.com/TeknofileNet/docker-atlantis/commit/aef062d171e60b714bb4e1d9d72804114f5f5ec8))
+
+
+### Bug Fixes
+
+* **actions:** add custom runner ([8522c73](https://github.com/TeknofileNet/docker-atlantis/commit/8522c737b6ba7fab8ee29dc556773ef2f86367d1))
+* **actions:** release and docker workflow ([bcb0e2a](https://github.com/TeknofileNet/docker-atlantis/commit/bcb0e2a59248d2ceabe0a97d9f0e2604825a2d20))
+* **actions:** release and docker workflow ([2451cab](https://github.com/TeknofileNet/docker-atlantis/commit/2451cab23e541dc0596ba77f0b17d03ce459b0c8))
+* **dependabot:** fix erronuous : ([db10cc5](https://github.com/TeknofileNet/docker-atlantis/commit/db10cc5bf167729fe352eabf19ec0ffe96739f1b))
+* **dependabot:** fix erronuous : ([476d101](https://github.com/TeknofileNet/docker-atlantis/commit/476d101c8583a0a5ce2e7607fb0c1c624111aeb7))
+
 ## [1.2.1](https://github.com/ping-internal/opseng-op-atlantis/compare/v1.2.0...v1.2.1) (2025-10-24)
 
 
