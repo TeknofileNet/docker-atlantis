@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.1](https://github.com/TeknofileNet/docker-atlantis/compare/v1.0.0...v1.0.1) (2025-11-05)
+
+
+### Bug Fixes
+
+* **docker-publish:** check to make sure versions are read correctly or fail. ([3ed28ae](https://github.com/TeknofileNet/docker-atlantis/commit/3ed28ae2232c49c8d7083a8a83795533fe7f15b5))
+* **dockerfile:** base image ([2b3fc34](https://github.com/TeknofileNet/docker-atlantis/commit/2b3fc343ea799e6807a648a5a9434512702f993b))
+* **dockerfile:** base image ([7ef2a2a](https://github.com/TeknofileNet/docker-atlantis/commit/7ef2a2a4ca689580ff6a889bdfc0fa0dfe70e37c))
+
 ## 1.0.0 (2025-11-05)
 
 
