@@ -2,3 +2,4 @@ self-hosted-runner:
   # List of labels for self-hosted runners
   labels:
     - "ping-internal-*"
+    - "tkfnet-latest"
