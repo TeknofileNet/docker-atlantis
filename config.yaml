@@ -3,9 +3,9 @@ atlantis:
 tg_atlantis_config:
   version: 1.20.0
 terraform:
-  version: 1.6.0
+  version: 1.13.4 # TF 1.5.5 was the last change before the BSL license change
 terragrunt:
-  version: 0.91.4
+  version: 0.93.3
 kubectl:
   version: 1.31.2
 helm:
