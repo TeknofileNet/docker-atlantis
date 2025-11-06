@@ -91,13 +91,11 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
 #          platforms: linux/amd64,linux/arm64
           build-args: |
-            DOCKERHUB_MIRROR=${{ env.DOCKERHUB_MIRROR }}
             ATLANTIS_VERSION=${{ steps.versions.outputs.ATLANTIS_VERSION }}
             TG_ATLANTIS_CONFIG_VER=${{ steps.versions.outputs.TG_ATLANTIS_CONFIG_VER }}
             TF_VERSION=${{ steps.versions.outputs.TF_VERSION }}
             TG_VERSION=${{ steps.versions.outputs.TG_VERSION }}
             KUBECTL_VERSION=${{ steps.versions.outputs.KUBECTL_VERSION }}
             HELM_VERSION=${{ steps.versions.outputs.HELM_VERSION }}
-            PING_DOCKER_REPO=${{ env.PING_DOCKER_REPO }}
           no-cache: true
           pull: true
