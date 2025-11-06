@@ -40,6 +40,13 @@ RUN --mount=type=cache,target=/root/.cache \
     tgenv install "${TG_VERSION}" && \
     tgenv use "${TG_VERSION}"
 
+# Install Terraform
+RUN curl -fsSL "https://releases.hashicorp.com/terraform/${TF_VERSION}/terraform_${TF_VERSION}_linux_amd64.zip" \
+    -o /tmp/terraform.zip && \
+    unzip /tmp/terraform.zip -d /usr/local/bin/ && \
+    chmod +x /usr/local/bin/terraform && \
+    rm /tmp/terraform.zip
+
 # Install terragrunt-atlantis-config
 RUN curl -fsSL "https://github.com/transcend-io/terragrunt-atlantis-config/releases/download/v${TG_ATLANTIS_CONFIG_VER}/terragrunt-atlantis-config_${TG_ATLANTIS_CONFIG_VER}_linux_amd64" \
     -o /usr/local/bin/terragrunt-atlantis-config && \
