@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.3](https://github.com/TeknofileNet/docker-atlantis/compare/v1.1.2...v1.1.3) (2025-11-06)
+
+
+### Bug Fixes
+
+* **Dockerfile:** simpler way to install tg ([05d69a5](https://github.com/TeknofileNet/docker-atlantis/commit/05d69a559d90deeaf3b56383d47f4bf6c339b6c1))
+* **Dockerfile:** simpler way to install tg ([0f504a1](https://github.com/TeknofileNet/docker-atlantis/commit/0f504a1f9bca2b3980d5f0569fb7ba0f0083d689))
+
 ## [1.1.2](https://github.com/TeknofileNet/docker-atlantis/compare/v1.1.1...v1.1.2) (2025-11-06)
 
 
