@@ -88,6 +88,7 @@ COPY --from=debian-base /usr/local/bin/terragrunt-atlantis-config /usr/local/bin
 COPY --from=debian-base /usr/local/bin/kubectl /usr/local/bin/
 COPY --from=debian-base /usr/local/bin/helm /usr/local/bin/
 COPY --from=debian-base /opt/tgenv /opt/tgenv
+COPY --from=debian-base /usre/local/bin/terraform /usr/locl/bin/
 
 # Create symlinks for tgenv
 RUN ln -s /opt/tgenv/bin/* /usr/local/bin/
