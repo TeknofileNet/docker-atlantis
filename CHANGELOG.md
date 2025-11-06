@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/TeknofileNet/docker-atlantis/compare/v1.1.1...v1.1.2) (2025-11-06)
+
+
+### Bug Fixes
+
+* **terraform:** path typo ([567eda6](https://github.com/TeknofileNet/docker-atlantis/commit/567eda6b61b81ac4717f96315ac3aec6a10ff3c4))
+* **terraform:** path typo ([0a76a84](https://github.com/TeknofileNet/docker-atlantis/commit/0a76a84db0ac005b558ae713dfbbc1bc4467c1f2))
+
 ## [1.1.1](https://github.com/TeknofileNet/docker-atlantis/compare/v1.1.0...v1.1.1) (2025-11-06)
 
 
