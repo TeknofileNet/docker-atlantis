@@ -32,13 +32,10 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
         openssl && \
     rm -rf /var/lib/apt/lists/*
 
-# Install tgenv and terragrunt
-RUN --mount=type=cache,target=/root/.cache \
-    mkdir -p /opt/tgenv && \
-    git clone --depth=1 https://github.com/cunymatthieu/tgenv.git /opt/tgenv && \
-    ln -s /opt/tgenv/bin/* /usr/local/bin/ && \
-    tgenv install "${TG_VERSION}" && \
-    tgenv use "${TG_VERSION}"
+# Install Terragrunt
+RUN curl -fsSL "https://github.com/gruntwork-io/terragrunt/releases/download/v${TG_VERSION}/terragrunt_linux_amd64" \
+    -o /usr/local/bin/terragrunt && \
+    chmod +x /usr/local/bin/terragrunt
 
 # Install Terraform
 RUN curl -fsSL "https://releases.hashicorp.com/terraform/${TF_VERSION}/terraform_${TF_VERSION}_linux_amd64.zip" \
@@ -85,13 +82,10 @@ LABEL org.opencontainers.image.source="https://github.com/ping-internal/docker-a
 
 # Copy binaries and tools from build stage
 COPY --from=debian-base /usr/local/bin/terragrunt-atlantis-config /usr/local/bin/
+COPY --from=debian-base /usr/local/bin/terragrunt /usr/local/bin/
 COPY --from=debian-base /usr/local/bin/kubectl /usr/local/bin/
 COPY --from=debian-base /usr/local/bin/helm /usr/local/bin/
-COPY --from=debian-base /opt/tgenv /opt/tgenv
-COPY --from=debian-base /usr/local/bin/terraform /usr/locl/bin/
-
-# Create symlinks for tgenv
-RUN ln -s /opt/tgenv/bin/* /usr/local/bin/
+COPY --from=debian-base /usr/local/bin/terraform /usr/local/bin/
 
 # Set working directory
 WORKDIR /atlantis
