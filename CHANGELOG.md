@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/TeknofileNet/docker-atlantis/compare/v1.1.0...v1.1.1) (2025-11-06)
+
+
+### Bug Fixes
+
+* **terraform:** tf wasn't being copied to final layer ([a71e293](https://github.com/TeknofileNet/docker-atlantis/commit/a71e2932e0a2db59c47f125d95fb3e05ee3f917d))
+* **terraform:** tf wasn't being copied to final layer ([731c233](https://github.com/TeknofileNet/docker-atlantis/commit/731c233f306ce26e1bc8ea511dcb328c404efc7d))
+
 ## [1.1.0](https://github.com/TeknofileNet/docker-atlantis/compare/v1.0.2...v1.1.0) (2025-11-06)
 
 
