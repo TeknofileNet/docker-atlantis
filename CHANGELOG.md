@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/TeknofileNet/docker-atlantis/compare/v1.0.2...v1.1.0) (2025-11-06)
+
+
+### Features
+
+* **terraform:** bump to ver 1.6.0 ([2307590](https://github.com/TeknofileNet/docker-atlantis/commit/23075903af0ba658ce471ce0079fe1d8a9d13a51))
+* **terraform:** bump to ver 1.6.0 ([d1ae43a](https://github.com/TeknofileNet/docker-atlantis/commit/d1ae43a8e73e95d807a1a626b0082d8f171c9c2c))
+
 ## [1.0.2](https://github.com/TeknofileNet/docker-atlantis/compare/v1.0.1...v1.0.2) (2025-11-05)
 
 
